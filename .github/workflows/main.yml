@@ -2,3 +2,13 @@
   uses: actions/download-artifact@v2
   with:
     name: Geeddi
+name: Build and Upload Workflow
+on:
+  push:
+    branches:
+      - main
+      - develop
+  pull_request:
+    branches:
+      - main
+
